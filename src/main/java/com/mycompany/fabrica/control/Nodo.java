@@ -4,24 +4,26 @@
  */
 package com.mycompany.fabrica.control;
 
+import com.mycompany.fabrica.Material;
+
 /**
  *
  * @author Pablo
  */
 public class Nodo {
-    private int dato;
+    private Material dato;
     private Nodo siguiente;
-    
-    public Nodo(int dato){
+
+    public Nodo(Material dato){
         this.dato = dato;
         this.siguiente = null;
     }
 
-    public int getDato() {
+    public Material getDato() {
         return dato;
     }
 
-    public void setDato(int dato) {
+    public void setDato(Material dato) {
         this.dato = dato;
     }
 
@@ -32,6 +34,6 @@ public class Nodo {
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
-    
-    
+
+
 }
