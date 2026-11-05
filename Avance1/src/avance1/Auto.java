@@ -8,18 +8,27 @@ package avance1;
  *
  * @author Manny
  */
-public class Autos {
+public class Auto {
     private String  nombre;
     private String carroceria;
     private String motor; 
     private String llanta;
 
-    public Autos(String nombre, String carroceria, String motor, String llanta) {
+    public Auto(String nombre, String carroceria, String motor, String llanta) {
         this.nombre = nombre;
         this.carroceria = carroceria;
         this.motor = motor;
         this.llanta = llanta;
     }
+   
+    public Auto(String nombre, String carroceria, String motor) {
+        this.nombre = nombre;
+        this.carroceria = carroceria;
+        this.motor = motor;
+       
+    }        
+    
+    
 
     public String getLlanta() {
         return llanta;

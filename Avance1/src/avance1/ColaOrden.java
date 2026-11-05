@@ -17,8 +17,8 @@ public class ColaOrden {
         this.fin = null;
     }
     
-    public void encolar(String orden){
-        Orden nuevo = new Orden(orden);
+    public void encolar(String orden, String numero){
+        Orden nuevo = new Orden(orden, numero);
         
         if (fin != null) {
             fin.setSiguiente(nuevo);
@@ -26,7 +26,7 @@ public class ColaOrden {
         fin = nuevo;
         
         if (frente == null) {
-            
+            frente = nuevo;
         }
     }
     
@@ -44,5 +44,21 @@ public class ColaOrden {
         return dato;          
     }
     
+    public boolean esVacia(){
+        return frente == null;
+    }
+    
+    public void mostrar(){
+        if (esVacia()) {
+            System.out.println("Cola vacia");
+            return;
+        }
+        Orden actual = frente;
+        System.out.println("Contenido de cola");
+        while (actual != null)  {            
+            System.out.println(actual.toString());
+            actual = actual.getSiguiente();
+        }
+    }
 }
 

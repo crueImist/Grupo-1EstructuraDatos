@@ -6,7 +6,7 @@ package avance1;
 
 /**
  *
- * @author Manny
+ * @author Ale
  */
 public class Material {
 

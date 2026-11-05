@@ -18,7 +18,9 @@ public class Avance1 {
     public static void main(String[] args) {
         Inicio inicio = new Inicio();
         //inicio.setVisible(true);
+       Fabrica fabrica = new Fabrica(100, 1000);
        
+       fabrica.ordenesDeFabrica(15).mostrar();
                
                 
     }

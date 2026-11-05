@@ -16,10 +16,10 @@ public class Cinta {
             int numeroAleatorio = (int) (Math.random() * 6) + 1;
             switch (numeroAleatorio) {
                 case 1:
-                    material.encolar("Motor de lujo", 500);
+                    material.encolar("Motor de Lujo", 500);
                     break;
                 case 2:
-                    material.encolar("Motor deportivo", 2000);
+                    material.encolar("Motor Deportivo", 2000);
                     break;
                 case 3:
                     material.encolar("Carroceria", 500);
@@ -31,7 +31,7 @@ public class Cinta {
                     material.encolar("Llantas deportivas", 2000);
                     break;
                 case 6:
-                    material.encolar("Llantas de trabajo", 800);
+                    material.encolar("Llantas de Trabajo", 800);
                     break;    
 
                 default:
