@@ -9,9 +9,12 @@ package avance1;
  * @author Manny
  */
 public class Cinta {
+    
+    
     public ColaMaterial materiaAleatorio(int max) {
         ColaMaterial material = new ColaMaterial();
         int contador = 0;
+        
         while (contador != max) {
             int numeroAleatorio = (int) (Math.random() * 6) + 1;
             switch (numeroAleatorio) {

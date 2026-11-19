@@ -60,5 +60,23 @@ public class ColaOrden {
             actual = actual.getSiguiente();
         }
     }
+
+    public Orden getFrente() {
+        return frente;
+    }
+
+    public void setFrente(Orden frente) {
+        this.frente = frente;
+    }
+
+    public Orden getFin() {
+        return fin;
+    }
+
+    public void setFin(Orden fin) {
+        this.fin = fin;
+    }
+    
+    
 }
 
